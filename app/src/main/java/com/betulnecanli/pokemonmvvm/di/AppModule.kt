@@ -1,6 +1,6 @@
 package com.betulnecanli.pokemonmvvm.di
 
-import com.betulnecanli.pokemonmvvm.network.PokedexService
+import com.betulnecanli.pokemonmvvm.network.PokedexApi
 import com.betulnecanli.pokemonmvvm.repository.PokedexRepository
 import com.betulnecanli.pokemonmvvm.utils.Constants
 import dagger.Module
@@ -10,7 +10,6 @@ import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
 
 @Module
@@ -39,15 +38,15 @@ object AppModule {
 
             @Singleton
             @Provides
-            fun providePokedexService(retrofit : Retrofit) : PokedexService{
-                return retrofit.create(PokedexService::class.java)
+            fun providePokedexApi(retrofit : Retrofit) : PokedexApi{
+                return retrofit.create(PokedexApi::class.java)
             }
 
             @Singleton
             @Provides
             fun providePokemonRepository(
-                service : PokedexService
-            ) = PokedexRepository(service)
+                api : PokedexApi
+            ) = PokedexRepository(api)
 
 
 }
