@@ -1,10 +1,11 @@
-package com.betulnecanli.pokemonmvvm
+package com.betulnecanli.pokemonmvvm.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
+import com.betulnecanli.pokemonmvvm.R
 import com.betulnecanli.pokemonmvvm.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -24,8 +25,8 @@ class MainActivity : AppCompatActivity() {
                         as NavHostFragment
 
         navController = navHostFragment.findNavController()
-
-
-
     }
+
+
+
 }

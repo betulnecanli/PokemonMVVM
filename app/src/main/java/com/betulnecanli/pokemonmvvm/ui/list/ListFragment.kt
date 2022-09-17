@@ -13,11 +13,6 @@ import dagger.hilt.android.AndroidEntryPoint
 class ListFragment : Fragment(R.layout.fragment_list) {
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
