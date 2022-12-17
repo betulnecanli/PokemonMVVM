@@ -52,7 +52,6 @@ class PokedexListPagingAdapter : PagingDataAdapter<Result, PokedexListPagingAdap
 
                 Glide.with(root)
                     .load(imgLink)
-
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .listener(object : RequestListener<Drawable>{
                         override fun onLoadFailed(
@@ -61,7 +60,7 @@ class PokedexListPagingAdapter : PagingDataAdapter<Result, PokedexListPagingAdap
                             target: Target<Drawable>?,
                             isFirstResource: Boolean
                         ): Boolean {
-                            progressCircular.isVisible = false
+                            progressCircular.isVisible = true
                             return false
                         }
 
@@ -72,6 +71,7 @@ class PokedexListPagingAdapter : PagingDataAdapter<Result, PokedexListPagingAdap
                             dataSource: DataSource?,
                             isFirstResource: Boolean
                         ): Boolean {
+
                            val drawable = resource as BitmapDrawable
                             val bitmap = drawable.bitmap
                             Palette.Builder(bitmap).generate{
