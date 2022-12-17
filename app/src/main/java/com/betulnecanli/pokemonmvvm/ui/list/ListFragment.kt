@@ -45,10 +45,7 @@ class ListFragment : Fragment(R.layout.fragment_list) {
 
        viewModel.pokedexList.observe(viewLifecycleOwner){
            mAdapter.submitData(viewLifecycleOwner.lifecycle,it)
-
-
        }
     }
-
 
 }

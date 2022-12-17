@@ -27,7 +27,7 @@ class PokedexRepository @Inject constructor(
             pagingSourceFactory = {PokedexPagingSource(api)}
         ).liveData
 
-
+}
 
    /* suspend fun getPokemonList(limit : Int, offset : Int) : Resource<PokemonList>{
         val response = try {
@@ -48,4 +48,3 @@ class PokedexRepository @Inject constructor(
         }
         return Resource.Success(response)
     }*/
-}

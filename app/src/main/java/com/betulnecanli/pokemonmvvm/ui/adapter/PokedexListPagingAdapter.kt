@@ -52,6 +52,7 @@ class PokedexListPagingAdapter : PagingDataAdapter<Result, PokedexListPagingAdap
 
                 Glide.with(root)
                     .load(imgLink)
+
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .listener(object : RequestListener<Drawable>{
                         override fun onLoadFailed(
