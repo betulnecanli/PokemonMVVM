@@ -17,6 +17,8 @@ interface PokedexApi {
     ) : Response<PokemonList>
 
 
+
+
     @GET("/pokemon/{name}")
     suspend fun getPokemonDetail(
         @Path("name") name : String
