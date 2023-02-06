@@ -11,11 +11,11 @@ data class Pokemon(
     @SerializedName("forms")
     val forms: List<Form>,
     @SerializedName("game_indices")
-    val gameİndices: List<Gameİndice>,
+    val gameIndices: List<Gameİndice>,
     @SerializedName("height")
     val height: Int,
     @SerializedName("held_items")
-    val heldİtems: List<Any>,
+    val heldItems: List<Any>,
     @SerializedName("id")
     val id: Int,
     @SerializedName("is_default")
