@@ -1,8 +1,11 @@
 package com.betulnecanli.pokemonmvvm.data.remote.responses
 
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class Pokemon(
     @SerializedName("abilities")
     val abilities: List<Ability>,
@@ -14,8 +17,6 @@ data class Pokemon(
     val gameIndices: List<Gameİndice>,
     @SerializedName("height")
     val height: Int,
-    @SerializedName("held_items")
-    val heldItems: List<Any>,
     @SerializedName("id")
     val id: Int,
     @SerializedName("is_default")
@@ -28,16 +29,12 @@ data class Pokemon(
     val name: String,
     @SerializedName("order")
     val order: Int,
-    @SerializedName("past_types")
-    val pastTypes: List<Any>,
     @SerializedName("species")
     val species: Species,
     @SerializedName("sprites")
     val sprites: Sprites,
     @SerializedName("stats")
     val stats: List<Stat>,
-    @SerializedName("types")
-    val types: List<Type>,
     @SerializedName("weight")
     val weight: Int
-)
+) : Parcelable
