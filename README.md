@@ -45,7 +45,7 @@ To run this app, you'll need to have Android Studio installed. Follow these step
 
 # License
 ```xml
-Designed and developed by 2023 Betül Necanlı 
+Designed and developed by 2022 Betül Necanlı 
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
