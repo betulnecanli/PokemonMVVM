@@ -2,7 +2,6 @@
 
 <p align="center">  
  This is a basic Pokemon app that allows users to list and filter characters and view their details. It's built using the MVVM architecture and utilizes the PokeAPI to fetch Pokemon character data.
-</p>
 
 
 <h2 align="center">Features⭐</h2>
